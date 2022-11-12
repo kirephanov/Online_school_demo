@@ -44,6 +44,24 @@
                             <a href="#" class="nav__user__login-btn">Войти</a>
                             <!-- <a href="#" class="nav__user__profile">Профиль</a> -->
                         </div>
+
+                        <!-- Мобильное меню -->
+                        <div class="mobile-menu">
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a href="#">Войти</a>
+                                    <!-- <a href="#">Профиль</a> -->
+                                    <a href="index.html">О&nbspшколе</a>
+                                    <a href="#">Каталог&nbspкурсов</a>
+                                    <a href="#">Интерактивные&nbspуроки</a>
+                                    <a href="#">Блог</a>
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-btn">
+                                <img src="images/mobile-btn.svg" alt="Open" class="open-btn__icon">
+                            </span>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -71,7 +89,7 @@
             <div class="block2">
                 <div class="block2-container">
                     <h2 class="block2__title">
-                        Почему выбирают нас?
+                        Почему<br>выбирают<br>нас?
                     </h2>
                     <div class="block2__image">
                         <img src="images/Home page/block2.png" alt="" class="block2__image-img">
@@ -169,5 +187,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
