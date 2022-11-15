@@ -422,6 +422,74 @@ body {
     margin-top: 20px;
 }
 
+/******************* Регистрация / Авторизация **********************/
+.register {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.authorization {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.authorization-card {
+   background-color: #fff;
+   border-radius: 32px;
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+   padding: 20px 120px;
+   max-width: 735px;
+   box-sizing: border-box;
+   margin: 0 auto;
+}
+.authorization__title {
+   font-size: 64px;
+   font-weight: 500;
+   margin-top: 0;
+   margin-bottom: 55px;
+   text-align: center;
+}
+.authorization__form {
+   margin: 0 auto;
+}
+.authorization__form-label {
+   display: block;
+   font-size: 36px;
+   margin-bottom: 5px;
+}
+.authorization__form-input {
+    display: block;
+    font-size: 18px;
+    padding: 8px 20px;
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.authorization-btn {
+   color: #fff;
+   font-size: 24px;
+   font-weight: 500;
+   background-color: var(--orange);
+   border: none;
+   border-radius: 100px;
+   text-align: center;
+   width: 100%;
+   padding: 18px 30px;
+   margin-top: 40px;
+   box-sizing: border-box;
+   cursor: pointer;
+}
+.authorization__form-description {
+   font-size: 18px;
+   margin-top: 80px;
+   margin-bottom: 0;
+   text-align: center;
+}
+.authorization__form-description .authorization__form-description-link {
+   color: var(--blue);
+}
+
+
 /******************* Медиа-запросы **********************/
 @media (max-width: 1100px) {
     /*
@@ -539,6 +607,16 @@ body {
     .block3__form-input, .block3__form-textarea {
         max-width: 500px;
     }
+
+    /* 
+    * Регистрация
+    */
+    .authorization-card {
+		padding: 20px 50px;
+	}
+	.authorization__title {
+		font-size: 56px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -607,6 +685,20 @@ body {
     .course-card__photo {
         display: none;
     }
+
+    /* 
+    * Регистрация
+    */
+    .authorization__title {
+		font-size: 36px;
+		margin-bottom: 45px;
+	}
+	.authorization__form-label {
+		font-size: 24px;
+	}
+	.authorization__form-input {
+ 		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 465px) {
@@ -671,6 +763,20 @@ body {
     .filter__link {
         font-size: 14px;
     }
+
+    /* 
+    * Регистрация
+    */
+    .authorization__title {
+		font-size: 26px;
+		margin-bottom: 40px;
+	}
+	.authorization__form-label {
+		font-size: 18px;
+	}
+	.authorization-btn {
+		padding: 18px 10px;
+	}
 }
 
 @media (max-width: 380px) {
@@ -734,6 +840,24 @@ body {
     .course-card__title {
         font-size: 20px;
     }
+
+    /* 
+    * Регистрация
+    */
+    .authorization-card {
+		padding: 30px 10px;
+	}
+	.authorization__title {
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+	.authorization__form-label {
+		font-size: 18px;
+	}
+	.authorization-btn {
+		font-size: 18px;
+		padding: 18px 10px;
+	}
 }
 
 @media (max-width: 300px) {
