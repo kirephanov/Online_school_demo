@@ -92,7 +92,6 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -548,6 +547,64 @@ body {
 }
 .authorization__form-description .authorization__form-description-link {
    color: var(--blue);
+}
+
+
+/******************* Компилятор **********************/
+.compiler-container {
+    margin-bottom: 55px;
+}
+/* 
+* Редактор кода
+*/
+.compile-btn {
+    display: flex;
+    justify-content: center;
+}
+.run-btn {
+    color: #fff;
+    font-size: 24px;
+    background-color: var(--orange);
+    border: none;
+    margin-bottom: 40px;
+    border-radius: 32px;
+    padding: 18px 25px;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: 0.2s ease background-color;
+}
+.code {
+    width: 100%;
+    float:left;
+    min-height:300px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 40px; 
+}
+
+/*
+* Консоль
+*/
+.console__title {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.console-block {
+    width: 100%;
+    min-height: 150px;
+    background-color: #292929;
+    border-radius: 16px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.output {
+    font-family: 'Space Mono', monospace;
+    color: #fff;
+    margin: 0;
+    overflow-y:hidden;
+    overflow-x: auto;
 }
 
 
