@@ -37,7 +37,7 @@ body {
     transition: .3s ease box-shadow;
 }
 .janna-bot__img:hover {
-    box-shadow: 0px 0px 16px rgba(151, 58, 168, 1);
+    box-shadow: 0px 0px 32px rgba(151, 58, 168, 1);
 }
 
 /* 
@@ -606,6 +606,74 @@ body {
     overflow-y:hidden;
     overflow-x: auto;
 }
+.compiler-link {
+    color: var(--blue);
+}
+
+
+/******************* Домашнее задание **********************/
+/* 
+* Форма
+*/
+.form {
+    margin-bottom: 55px;
+}
+.form-container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.form-label {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.form-select {
+    color: var(--grey);
+    font-size: 32px;
+ 	padding: 10px 30px;
+ 	width: 100%;
+ 	border: 1px solid var(--grey);
+ 	border-radius: 32px;
+ 	appearance: none;
+	background-image: url(../images/arrow_select.svg);
+	background-repeat: no-repeat;
+	background-position: 96% 48%;
+}
+.file_input {
+	padding: 8px;
+	font-size: 26px;
+	color: var(--dark);
+}
+.form-btn__container {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-reset {
+    cursor: pointer;
+    color: var(--orange);
+    font-size: 40px;
+    font-weight: 500;
+    border: none;
+    background-color: #fff;
+}
+.btn-send {
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 100px;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+}
 
 
 /******************* Медиа-запросы **********************/
@@ -682,6 +750,17 @@ body {
     .block3__form-input, .block3__form-textarea {
         max-width: 600px;
     }
+
+    /* 
+    * Домашнее задание
+    */
+    .form-btn__container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .btn-reset {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -754,6 +833,22 @@ body {
         font-size: 28px;
         max-width: 430px;
     }
+
+    /*  
+    * Домашнее задание
+    */
+    .form-label {
+        font-size: 32px;
+    }
+    .form-select {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+    .file_input {
+		font-size: 22px;
+		width: 350px;
+		display: block
+	}
 }
 
 @media (max-width: 535px) {
@@ -923,6 +1018,16 @@ body {
     .block3__title {
         font-size: 48px;
         margin-bottom: 55px;
+    }
+
+    /*  
+    * Домашнее задание
+    */
+    .file_input {
+		width: 250px;
+	}
+    .btn-send {
+        font-size: 32px;
     }
 }
 
