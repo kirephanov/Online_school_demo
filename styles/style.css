@@ -692,9 +692,66 @@ body {
     font-size: 96px;
     font-weight: 500;
 }
-.course-card__open-course {
+/* .course-card__open-course {
     max-width: 700px;
+} */
+
+
+/******************* Страница урока **********************/
+.lesson-container {
+    margin-bottom: 55px;
 }
+.lesson-video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.lesson-content {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.lesson-block {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.lesson-block__title {
+    font-size: 56px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.lesson-block__content {
+    font-size: 18px;
+    margin: 0;
+}
+.lesson-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+}
+.lesson__homework-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: var(--orange);
+    border-radius: 100px;
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    max-width: 750px;
+    width: 100%;
+}
+.lesson__compiler-link {
+    color: var(--orange);
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
 
 /******************* Медиа-запросы **********************/
 @media (max-width: 1100px) {
@@ -781,6 +838,16 @@ body {
     .btn-reset {
         font-size: 24px;
     }
+
+    /* 
+    * Страница урока
+    */
+    .lesson__homework-btn {
+        max-width: 650px;
+    }
+    .lesson__compiler-link {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -834,6 +901,13 @@ body {
 	.authorization__title {
 		font-size: 56px;
 	}
+
+    /* 
+    * Страница урока
+    */
+    .lesson__homework-btn {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -875,6 +949,17 @@ body {
     */
     .course-bunner__title {
         font-size: 70px;
+    }
+
+    /* 
+    * Страница урока
+    */
+    .lesson-block__title {
+        font-size: 48px;
+    }
+    .lesson__homework-btn {
+        font-size: 32px;
+        max-width: 400px;
     }
 }
 
@@ -946,6 +1031,13 @@ body {
     .course-bunner__title {
         font-size: 60px;
     }
+
+    /* 
+    * Страница урока
+    */
+    .lesson__compiler-link {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 465px) {
@@ -954,6 +1046,14 @@ body {
     */
     .page-title, course-bunner__title {
         font-size: 56px;
+    }
+
+    /* 
+    * Страница урока
+    */
+    .lesson__homework-btn {
+        font-size: 28px;
+        max-width: 300px;
     }
 }
 
@@ -1070,6 +1170,21 @@ body {
     .btn-send {
         font-size: 32px;
     }
+
+    /* 
+    * Страница урока
+    */
+    .lesson-block__title {
+        font-size: 36px;
+    }
+    .lesson__homework-btn {
+        font-size: 24px;
+        max-width: 250px;
+        padding: 15px;
+    }
+    .lesson__compiler-link {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -1129,6 +1244,15 @@ body {
     .course-bunner__title {
         font-size: 36px;
     }
+    /* 
+    * Страница урока
+    */
+    .lesson-block__title {
+        font-size: 32px;
+    }
+    .lesson-block__content {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -1149,5 +1273,13 @@ body {
 
     .block3__form-input, .block3__form-textarea {
         max-width: 170px;
+    }
+
+    /* 
+    * Страница урока
+    */
+    .lesson__homework-btn {
+        font-size: 18px;
+        max-width: 200px;
     }
 }
