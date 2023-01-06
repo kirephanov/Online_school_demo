@@ -685,6 +685,7 @@ body {
     padding-top: 55px;
     padding-bottom: 130px;
     border-radius: 0px 0px 500px 0px;
+    margin-top: -1px;
     margin-bottom: 90px;
 }
 .course-bunner__title {
@@ -750,6 +751,31 @@ body {
     font-size: 48px;
     font-weight: 500;
     text-align: center;
+}
+
+
+/******************* Статья **********************/
+.article-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 90px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.article-content {
+    font-size: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0;
+}
+.article-content__title {
+    font-size: 32px;
+    font-weight: 500;
 }
 
 
@@ -1131,6 +1157,19 @@ body {
     .course-bunner__title {
         font-size: 48px;
     }
+
+    /* 
+    * Статья
+    */
+    .article-title {
+        font-size: 36px;
+    }
+    .article-content {
+        font-size: 18px;
+    }
+    .article-content__title {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1184,6 +1223,19 @@ body {
     }
     .lesson__compiler-link {
         font-size: 18px;
+    }
+
+    /* 
+    * Статья
+    */
+    .article-title {
+        font-size: 32px;
+    }
+    .article-content {
+        font-size: 16px;
+    }
+    .article-content__title {
+        font-size: 24px;
     }
 }
 

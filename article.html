@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/neyro_chel.ico">
+    <title>Нейро Чел | Онлайн-платформа для обучения программированию</title>
+</head>
+<body>
+    <div class="janna-bot">
+        <a href="#" class="janna-bot__link"><img src="images/janna-logo.svg" class="janna-bot__img"></a>
+    </div>
+    <!-- Навигация -->
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <nav>
+                    <div class="nav">
+                        <div class="nav__logo">
+                            <a href="index.html" class="nav__logo__link">
+                                <img src="images/logo.svg" alt="Нейро Чел" class="nav__logo__link-img">
+                            </a>
+                        </div>
+                        <div class="nav__menu">
+                            <ul class="nav__menu__links">
+                                <li class="nav__menu__links__item">
+                                    <a href="index.html" class="nav__menu__link">О школе</a>
+                                </li>
+                                <li class="nav__menu__links__item">
+                                    <a href="#" class="nav__menu__link">Каталог курсов</a>
+                                </li>
+                                <li class="nav__menu__links__item">
+                                    <span class="dropdown">
+                                        <button class="dropbtn">Практика
+                                            <img src="images/arrow_down.svg">
+                                        </button>
+                                        <span class="dropdown-content">
+                                          <a href="#">Интерактивные задачи</a>
+                                          <a href="#">Задачи для собеседования</a>
+                                          <a href="#">Технические задания</a>
+                                        </span>
+                                      </span>
+                                </li>
+                                <li class="nav__menu__links__item">
+                                    <a href="#" class="nav__menu__link">Блог</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__user">
+                            <a href="#" class="nav__user__login-btn">Войти</a>
+                            <!-- <a href="#" class="nav__user__profile">Профиль</a> -->
+                        </div>
+
+                        <!-- Мобильное меню -->
+                        <div class="mobile-menu">
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a href="#">Войти</a>
+                                    <!-- <a href="#">Профиль</a> -->
+                                    <a href="index.html">О&nbspшколе</a>
+                                    <a href="#">Каталог&nbspкурсов</a>
+                                    <a href="#">Практика</a>
+                                    <a href="#">Блог</a>
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-btn">
+                                <img src="images/mobile-btn.svg" alt="Open" class="open-btn__icon">
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <h1 class="article-title">Как различать веб-разработчиков?</h1>
+    </div>
+
+    <!-- Статья -->
+    <section>
+        <div class="wrapper">
+            <div class="article">
+                <p class="article-content">
+                    <span class="article-content__title">Frontend? Backend? Как их различать?</span><br><br>
+                    Пользователи привыкли видеть сайт, как набор красивых картинок. Но все намного сложнее. Внутри сайт может быть похож на огромный лабиринт из файлов и папок. Чтобы разобраться во всем этом нужны разные специалисты.
+                    <br><br>
+                    Сайт состоит из двух основных частей. Первую часть называют frontend. В нее входит все, с чем работает пользователь.
+                    <br><br>
+                    В backend входит все то, что заставляет сайт работать. Это серверная часть, которая скрыта от глаз пользователя.
+                    <br><br><br>
+                    <span class="article-content__title">Чем занимается frontend-разработчик?</span><br><br>
+                    Frontend занимается разработкой интерфейса системы. Но он не создает дизайн. Для этого есть другие специалисты.
+                    <br><br>
+                    Основные инструменты frontend-разработчика: HTML, CSS, JS. Да, выбор невелик. Но это не значит, что у него слишком простая работа.
+                    <br><br>
+                    CSS и JS редко используются в чистом виде. Обычно работают с их препроцессорами и фреймворками.
+                    <br><br>
+                    Хороший frontend-разработчик должен заранее продумать связь его части системы с сервером. Правильно сделать запросы к серверу, чтобы освободить от этой задачи backend-разработчика.
+                    <br><br><br>
+                    <span class="article-content__title">Что там у backend-разработчиков?</span><br><br>
+                    Пока вы не столкнетесь с проблемами в работе системы, не узнаете важность backend-разработчиков. Эти специалисты ускоряют загрузку страниц, обрабатывают формы и запросы от клиентской стороны.
+                    <br><br>
+                    У backend-разработчиков большой выбор языков для работы. Но PHP, Java, Python и JS можно выделить как самые популярные варианты. Выбор языка зависит от сложности работы или от предпочтений заказчика.
+                    <br><br>
+                    Знания backend-разработчика не заканчиваются на умении работать с языками программирования. Специалисты серверной стороны часто сталкиваются с базами данных. Для этого нужно знать SQL и уметь работать с одной или несколькими СУБД.
+                    <br><br>
+                    Backend-разработчику могут потребоваться небольшие изменения в клиентской части для исправления ошибки на сервере. Для этого специалист должен понимать основы frontend.
+                    <br><br><br>
+                    <span class="article-content__title">Может ли один человек выполнять обе работы?</span><br><br>
+                    Full-stack может заниматься разработкой сразу двух сторон системы. Но не всем компаниям нужны такие специалисты. Все из-за того, что разработчики полного стека владеют на высоком уровне только одним направлением.
+                    <br><br>
+                    Ценность таких специалистов раскрывается на фрилансе. Заказчикам выгодно работать с одним человеком, который сделает им полную систему.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <p class="watermark">
+                    Made by<br><span><a href="https://github.com/kirephanov" target="_blank" class="watermark__link">Kirill Ephanov</a></span>
+                </p>
+                <div class="footer__content">
+                    <p class="footer__content__description">
+                        &#169 2022 Нейро Чел.
+                    </p>
+                    <div class="footer__content__socials">
+                        <a href="#" class="footer__content__socials__link"><img src="images/Socials/Telegram.svg" alt="Telegram" class="footer__content__socials__img"></a>
+                        <a href="#" class="footer__content__socials__link"><img src="images/Socials/VK.svg" alt="VK" class="footer__content__socials__img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ace/ace.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/run.js"></script>
+</body>
+</html>
