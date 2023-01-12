@@ -858,6 +858,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+.practice-header {
+    margin-bottom: 55px;
+}
 .practice-title {
     font-size: 40px;
     font-weight: 500;
@@ -872,7 +875,7 @@ body {
 }
 .practice-content {
     font-size: 20px;
-    margin-top: 55px;
+    margin-top: 0;
     margin-bottom: 55px;
 }
 .practice-block2__title {

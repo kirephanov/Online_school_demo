@@ -85,31 +85,29 @@
 
     <div class="wrapper">
         <div class="practice practice-header">
-            <h1 class="practice-title">Что выдаёт этот код?</h1>
+            <h1 class="practice-title">Middle Backend разработчик на Python</h1>
             <p class="practice-category">Python</p>
         </div>
     </div>
 
-    <!-- Задача -->
+    <!-- Собеседование -->
     <section>
         <div class="wrapper">
             <div class="practice">
                 <p class="practice-content">
-                    list1 = [n for n in range(21)]<br> 
-                    list2 = []<br>
-                    <br>
-                    for item in list1:<br>
-	                &nbsp;&nbsp;&nbsp;&nbsp;list2.append(item**2)<br>
-                    <br>
-                    print(sum(list2))
+                    Написать код, который будет рассчитывать угол между часовой и минутной стрелкой в заданное время.
                 </p>
-                <p class="practice-block2__title">Ответ</p>
-                <form action="">
-                    <div class="practice-form">
-                        <textarea name="" id="" cols="30" rows="10" class="practice-textarea"></textarea>
-                        <button class="btn-send practice-btn">Отправить</button>
-                    </div>
-                </form>
+                <p class="practice-block2__title">Решение</p>
+                <p class="practice-content">
+                    def calc_angel(t: datetime.time) -> float:<br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;h = t.hour<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if h > 12:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h -= 12<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;hour_angle = 0.5 * (h * 60 + t.minute)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;minute_angle = 6 * t.minute<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;angle = abs(hour_angle - minute_angle)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return min(angle, 360 - angle)
+                </p>
             </div>
         </div>
     </section>
