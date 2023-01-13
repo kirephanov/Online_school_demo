@@ -904,6 +904,45 @@ body {
 }
 
 
+/******************* Навигация по практике **********************/
+.practice-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1px;
+}
+.practice-menu__link {
+    height: 250px;
+    text-decoration: none;
+}
+.practice-menu__item {
+    height: 250px;
+}
+.practice-menu__link .practice-menu__item-first {
+    background-color: #a663cc;
+    background-image: url(../images/Practice_menu/laptop.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+.practice-menu__link .practice-menu__item-second {
+    background-color: #b2967d;
+    background-image: url(../images/Practice_menu/folder.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+.practice-menu__link .practice-menu__item-third {
+    background-color: #b298dc;
+    background-image: url(../images/Practice_menu/paper.png);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+.practice-menu__item-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
 /******************* Медиа-запросы **********************/
 @media (max-width: 1100px) {
     /*
@@ -1465,6 +1504,13 @@ body {
     }
     .article-card__title {
         font-size: 16px;
+    }
+
+    /* 
+    * Навигация по практике 
+    */
+    .practice-menu__item-title {
+        font-size: 32px;
     }
 }
 
